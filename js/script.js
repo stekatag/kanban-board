@@ -130,9 +130,17 @@ const updateItem = function (id, column) {
 
 // Add to Column List, Reset Textbox
 const addItemToCol = function (col) {
-  const itemText = addItems[col].textContent;
+  // Trim whitespace from input
+  const itemText = addItems[col].textContent.trim();
+
+  // Check if item is empty
+  if (itemText === '') return;
+
+  // Add item to the corresponding array
   const selectedArray = listArrays[col];
   selectedArray.push(itemText);
+
+  // Reset textbox
   addItems[col].textContent = '';
   updateDOM();
 }
