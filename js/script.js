@@ -54,6 +54,7 @@ const updateSavedColumns = function () {
 // Filter Array to remove empty values
 const filterArray = function (arr) {
   const filteredArray = arr.filter(item => item !== null);
+  console.log(filteredArray);
   return filteredArray;
 }
 
@@ -111,13 +112,16 @@ const updateItem = function (id, column) {
 
   // If an item is not being dragged
   if (!dragging) {
-    // If the selected element is empty, delete the item from the array
-    if (!selectedColumnEl[id].textContent) {
-      delete selectedArray[id];
+    // Get the selected item text content
+    const selectedItem = selectedColumnEl[id].textContent.trim();
+
+    // If the selected element is empty, remove the item from the array
+    if (!selectedItem) {
+      selectedArray.splice(id, 1);
     }
     // Otherwise, update the array with the new value
     else {
-      selectedArray[id] = selectedColumnEl[id].textContent;
+      selectedArray[id] = selectedItem;
     }
     // Update the DOM with the new array values
     updateDOM();
