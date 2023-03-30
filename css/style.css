@@ -24,7 +24,7 @@ html {
 }
 
 body {
-  background: url("./background.jpg");
+  background: url("../img/background.jpg");
   background-size: cover;
   background-position: 50% 60%;
   background-attachment: fixed;
