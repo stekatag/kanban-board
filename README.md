@@ -8,6 +8,14 @@ Kanban Board is a web-based project management tool that allows users to organiz
 
 To use Kanban Board, simply visit the [live demo](https://stekatag.github.io/kanban-board/) or download the source code and run it on your own web server.
 
+## 🖥️ Desktop preview
+
+![Desktop preview](img/desktop-version.png)
+
+## 📱 Mobile preview
+
+![Mobile preview](img/mobile-version.png)
+
 ## 🎉 Features
 
 The Kanban Board has the following features:
@@ -27,7 +35,7 @@ If you would like to contribute to Kanban Board, please follow these steps:
 
 ## ℹ️ Credits
 
-Kanban Board was created by Stefan Katanic.
+Kanban Board was created by Stefan Gogov.
 
 ## 🪪 License
 
