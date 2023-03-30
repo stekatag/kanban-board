@@ -31,4 +31,4 @@ Kanban Board was created by Stefan Katanic.
 
 ## 🪪 License
 
-Distributed under the MIT License. See [license](https://github.com/stekatag/kanban-baord/LICENSE.txt) for more information.
+Distributed under the MIT License. See [license](https://github.com/stekatag/kanban-board/blob/master/LICENSE) for more information.
